@@ -24,7 +24,6 @@ const ServiceList = () => {
                 src={service.video}
                 alt={service.service_name}
                 className="border-des"
-                controls
                 autoPlay
                 loop
                 muted

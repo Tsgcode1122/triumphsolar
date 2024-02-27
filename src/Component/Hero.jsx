@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 import lashB from "../Images/hero.jpg";
 import "../hero.css";
 import HeroService from "./HeroService";
@@ -25,18 +26,18 @@ const Hero = () => {
             Commercial Properties
           </h3>
           <div className=" pt-8 gap-4 ">
-            <a>
+            <Link to="/Contact">
               {" "}
               <button className="bg-redC shadow-lightC  border-solid border-lightC rounded-md p-2 shadow  mr-3 ">
                 Get a Quote
               </button>
-            </a>
-            <a>
+            </Link>
+            <Link to="/Services">
               {" "}
               <button className="bg-redC shadow-lightC  border-solid border-lightC rounded-md p-2 shadow  ">
                 Explore Services
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

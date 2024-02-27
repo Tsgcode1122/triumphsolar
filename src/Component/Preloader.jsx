@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import "../hero.css";
 const Preloader = () => {
   const [loading, setLoading] = useState(true);
 
@@ -18,7 +18,7 @@ const Preloader = () => {
 
   return (
     <div className={`preloader ${loading ? "show" : "hide"}`}>
-      <img className="max-w-full h-[50px] " alt="Logo" />
+      {/* <img className="max-w-full h-[50px] " alt="Logo" /> */}
       <span className="loading loading-ring loading-xs"></span>
       <span className="loading loading-ring loading-sm"></span>
       <span className="loading loading-ring loading-md"></span>

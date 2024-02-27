@@ -11,9 +11,10 @@ import Image8 from "../Images/image8.jpg";
 import Image9 from "../Images/image9.jpg";
 import Image10 from "../Images/image10.jpg";
 import { IoMdCall } from "react-icons/io";
+import { Link } from "react-router-dom";
 const ImageGallery = () => {
   const images = [
-    { id: 1, src: Image1, height: "200px" },
+    { id: 1, src: Image1, height: "250px" },
     { id: 2, src: Image2, height: "200px" },
     { id: 3, src: Image3, height: "200px" },
     { id: 4, src: Image4, height: "200px" },
@@ -45,35 +46,50 @@ const ImageGallery = () => {
           <h2 className="text-redC">GALLERY</h2>
           <h3 className="text-2xl font-bold text-blueC mb-4">Our Projects</h3>
         </div>
-        <div className="grid grid-cols-2 gap-3 bg-lightC pt-24  pb-8 px-4 gb box-shad relative">
+
+        <div className="grid grid-cols-2 gap-3 bg-lightC pt-16  pb-8 px-4 gb box-shad relative">
           {images.map((image, index) => {
             let height = image.height;
             let marginTop = 0;
-
+            let borderRadius = 0;
             if (index > 0 && index % 2 === 1) {
               marginTop = -50;
             }
-
+            if (index === 0) {
+              marginTop = -50;
+            }
             return (
-              <div
-                key={image.id}
-                style={{
-                  height,
-                  marginTop,
-                  position: "relative",
-                  overflow: "hidden",
-                  boxShadow: "1px 1px 7px -1px rgb(0, 0, 0)",
-                }}
-                className="rounded-md  cursor-pointer "
-                onClick={() => handleImageClick(image)}
-              >
-                <img
-                  src={image.src}
-                  alt={`Image ${image.id}`}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  className="rounded-md shadow-2xl"
-                />
-              </div>
+              <>
+                <div
+                  key={image.id}
+                  style={{
+                    height,
+                    marginTop,
+                    position: "relative",
+                    overflow: "hidden",
+                    borderRadius:
+                      index === 0
+                        ? "30px 6px 6px 6px"
+                        : index === 1
+                          ? "0px 30px 6px 6px"
+                          : "",
+                    boxShadow: "1px 1px 7px -1px rgb(0, 0, 0)",
+                  }}
+                  className="rounded-md  cursor-pointer "
+                  onClick={() => handleImageClick(image)}
+                >
+                  <img
+                    src={image.src}
+                    alt={`Image ${image.id}`}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    className="rounded-md shadow-2xl"
+                  />
+                </div>
+              </>
             );
           })}
         </div>
@@ -98,11 +114,11 @@ const ImageGallery = () => {
           </div>
         )}
         <div className="flex relative justify-center  items-center bg-lightC mt-[-10px]  p-4 box-shad gt">
-          <a>
+          <Link to="/Contact">
             <button className="bg-redC text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 shadow mr-3">
               Get Free Quote!!!
             </button>
-          </a>
+          </Link>
           <a href="tel:+14016326426">
             <button className="bg-redC text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 shadow mr-3 flex items-center gap-4">
               <IoMdCall /> (401) 632 6426

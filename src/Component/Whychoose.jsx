@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 import "../hero.css";
 import whyB from "../Images/slider-bg.png";
 import icon1 from "../Images/icons/satisfaction.png";
@@ -116,11 +117,6 @@ const Whychoose = () => {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <a>
-            <button className="bg-redC text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 shadow mr-3">
-              Book Service!!!
-            </button>
-          </a>
           <a href="tel:+14016326426">
             <button className="bg-redC text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 shadow mr-3 flex items-center gap-4">
               <IoMdCall /> (401) 632 6426

@@ -121,7 +121,7 @@ const Navbar = () => {
                 GALLERY <IoIosArrowDropright />
               </Link>
             </li>
-            <li className="pb-2">
+            {/* <li className="pb-2">
               <Link
                 to="/ServiceArea"
                 className="flex justify-between p-2 border shadow-inner border-lightC rounded-md transition-all duration-300 hover:scale-[1.02] hover:bg-lightC hover:border-blueC  hover:text-redC"
@@ -130,7 +130,7 @@ const Navbar = () => {
                 SERVICE AREA
                 <IoIosArrowDropright />
               </Link>
-            </li>
+            </li> */}
             <li className="pb-2">
               <Link
                 to="/Reviews"

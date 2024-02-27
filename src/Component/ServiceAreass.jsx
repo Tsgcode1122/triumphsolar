@@ -1,8 +1,9 @@
 // ServiceArea.jsx
 import React from "react";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 import "../hero.css";
 import lashB from "../Images/service-bg.jpg";
-const ServiceArea = () => {
+const ServiceAreass = () => {
   const serviceAreas = [
     { id: 1, name: "123 Main St, City" },
     { id: 2, name: "456 Oak St, City" },
@@ -42,4 +43,4 @@ const ServiceArea = () => {
   );
 };
 
-export default ServiceArea;
+export default ServiceAreass;

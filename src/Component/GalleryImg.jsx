@@ -2,8 +2,8 @@ import React from "react";
 import "../hero.css";
 import bef1 from "../Images/bef1.jpg";
 import aft1 from "../Images/aft1.jpg";
-import bef2 from "../Images/bef1.jpg";
-import aft2 from "../Images/bef1.jpg";
+import bef2 from "../Images/bef2.jpg";
+import aft2 from "../Images/bef2.jpg";
 import ReactCompareImage from "react-compare-image";
 const GalleryImg = () => {
   return (

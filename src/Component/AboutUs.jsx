@@ -1,9 +1,10 @@
 import React from "react";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 import about from "../Images/brickb.png";
-import aboutu from "../Images/aboutu.jpg";
+import aboutu from "../Images/t2.jpg";
 import Whychoose from "./Whychoose";
 import "../hero.css";
-const About = () => {
+const AboutUs = () => {
   const bStyle = {
     backgroundImage: `url(${about})`,
   };
@@ -26,11 +27,11 @@ const About = () => {
             brushstroke of excellence.
           </article>
 
-          <a>
+          <Link to="/About">
             <button className="bg-redC shadow-lightC  border-solid border-lightC rounded-md p-2 shadow  mr-3 text-lightC ">
               Read More...
             </button>
-          </a>
+          </Link>
           <div className="p-6   ">
             <img
               src={aboutu}
@@ -43,4 +44,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutUs;

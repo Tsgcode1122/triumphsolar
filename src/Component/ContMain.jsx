@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 import { IoMdCall } from "react-icons/io";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineEmail } from "react-icons/md";
-const ContactForm = () => {
+const ContMain = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -68,12 +68,12 @@ const ContactForm = () => {
   return (
     <>
       <div className="max-w-2xl mx-auto  m-0 bg-lightC">
-        <div className="text-center bg-blueC pb-16 pt-8">
+        <div className="text-center bg-lightC pb-16 pt-8">
           <h2 className="text-redC font-bold mb-4">CONTACT US</h2>
-          <h3 className="text-lightC text-xl font-bold mb-8">
+          <h3 className="text-blueC text-xl font-bold mb-8">
             Get An Instant Quote Now!
           </h3>
-          <p className="text-lightC mb-4">
+          <p className="text-blueC mb-4">
             Questions, feedback, or inquiries? Connect with us by phone, email,
             or the form below. Whether you're an artist, enthusiast, or curious
             visitor, let's start a conversation and explore possibilities
@@ -83,26 +83,26 @@ const ContactForm = () => {
           <div className="flex flex-col items-center justify-center  bg-transparent">
             <div className="flex px-4 justify-center mb-4">
               <a href="https://www.instagram.com/triumphsolarpicasso?igsh=MWF5d21nN3p4bWEzZQ==">
-                <button className=" text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 box-shad mr-3 flex items-center gap-4">
+                <button className=" text-blueC shadow-lightC border-solid border-lightC rounded-md p-2 box-shad mr-3 flex items-center gap-4">
                   <FaInstagram /> triumphsolarpicasso
                 </button>
               </a>
               <a href="tel:+14016326426">
-                <button className=" text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 box-shad mr-3 flex items-center gap-4">
+                <button className=" text-blueC shadow-lightC border-solid border-lightC rounded-md p-2 box-shad mr-3 flex items-center gap-4">
                   <IoMdCall /> (401) 632 6426
                 </button>
               </a>
             </div>
             <div className="flex px-4 justify-center mb-4">
               <a>
-                <button className=" text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 box-shad mr-3 flex items-center gap-4">
+                <button className=" text-blueC shadow-lightC border-solid border-lightC rounded-md p-2 box-shad mr-3 flex items-center gap-4">
                   <CiLocationOn /> 123 Main St, City, United States
                 </button>
               </a>
             </div>
             <div className="flex flex-col px-4 justify-center">
               <a href="mailto:triumphsolar@yahoo.com">
-                <button className=" text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 box-shad mr-3 flex items-center gap-4">
+                <button className=" text-blueC shadow-lightC border-solid border-lightC rounded-md p-2 box-shad mr-3 flex items-center gap-4">
                   <MdOutlineEmail />
                   triumphsolar@yahoo.com
                 </button>
@@ -279,4 +279,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default ContMain;

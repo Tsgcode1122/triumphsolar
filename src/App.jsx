@@ -44,9 +44,13 @@ const App = () => {
 
   return (
     <>
-      <RouterProvider router={router}>
-        <Navbar />
-      </RouterProvider>
+      {contentVisible ? (
+        <RouterProvider router={router}>
+          <Navbar />
+        </RouterProvider>
+      ) : (
+        <Preloader />
+      )}
     </>
   );
 };

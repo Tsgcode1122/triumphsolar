@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { IoMdCall } from "react-icons/io";
 import "../hero.css";
 const reviews = [
@@ -35,7 +36,7 @@ const reviews = [
   },
 ];
 
-const Reviews = () => {
+const Reviewss = () => {
   const getInitials = (name) => {
     const names = name.split(" ");
     return names
@@ -50,7 +51,7 @@ const Reviews = () => {
         <div className="text-center">
           <h2 className="text-redC font-bold mb-4">REVIEWS</h2>
           <h3 className="text-blueC text-xl font-bold mb-8">
-            We offer and cover services in the following USA cities:
+            Our Clients Trust US
           </h3>
         </div>
         {reviews.map((review) => (
@@ -79,11 +80,11 @@ const Reviews = () => {
         ))}
       </div>
       <div className="flex justify-center  items-center bg-lightC mt-[-10px]  p-4 ">
-        <a>
+        <Link to="/Reviews">
           <button className="bg-redC text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 box-shad mr-3">
             More Reviews
           </button>
-        </a>
+        </Link>
         <a href="tel:+14016326426">
           <button className="bg-redC text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 box-shad mr-3 flex items-center gap-4">
             <IoMdCall /> (401) 632 6426
@@ -94,4 +95,4 @@ const Reviews = () => {
   );
 };
 
-export default Reviews;
+export default Reviewss;
