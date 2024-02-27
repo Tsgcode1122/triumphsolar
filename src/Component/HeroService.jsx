@@ -1,4 +1,5 @@
 import React from "react";
+import "../hero.css";
 import brick from "../Images/icons/solarcl.png";
 import renovation from "../Images/icons/renovation.png";
 import lands from "../Images/icons/lands.png";
@@ -8,7 +9,7 @@ import pool from "../Images/icons/pool.png";
 const HeroService = () => {
   return (
     <>
-      <div className="bg-lightC  mt-[-2rem] mx-4 border-2 border-solid border-lightC rounded-xl p-2 shadow-md flex flex-wrap gap-1 box-shad">
+      <div className="bg-lightC  mt-[-2rem] mx-4 border-2 border-solid border-lightC rounded-2xl p-2  flex flex-wrap gap-1 box-shad">
         <div className="bg-lightC flex  flex-col max-w-[7rem] justify-center items-center text-center mx-4 border-2 border-solid border-lightC rounded-xl p-1 shadow-md  ">
           <img src={brick} className="max-w-full h-[2rem] " alt="Flooring" />
           <span className="text-[12px] ">SOLAR INSTALL/CLEANING</span>

@@ -2,6 +2,7 @@ import React from "react";
 import about from "../Images/brickb.png";
 import aboutu from "../Images/aboutu.jpg";
 import Whychoose from "./Whychoose";
+import "../hero.css";
 const About = () => {
   const bStyle = {
     backgroundImage: `url(${about})`,
@@ -33,7 +34,7 @@ const About = () => {
           <div className="p-6   ">
             <img
               src={aboutu}
-              className="max-w-full border-design border-design   border-solid  rounded-xl  shadow-md flex flex-wrap gap-1 box-shad "
+              className="max-w-full border-design border-design   border-solid flex flex-wrap gap-1 box-shad "
             />
           </div>
         </div>

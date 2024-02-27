@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "../hero.css";
 import { motion, useAnimation } from "framer-motion";
 import img1 from "../Images/icons/house.png";
 import img2 from "../Images/icons/roller.png";

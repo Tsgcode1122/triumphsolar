@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../hero.css";
 import { Outlet, Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { CiMail } from "react-icons/ci";

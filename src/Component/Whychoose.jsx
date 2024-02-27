@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../hero.css";
 import whyB from "../Images/slider-bg.png";
 import icon1 from "../Images/icons/satisfaction.png";
 import icon2 from "../Images/icons/prooo.png";

@@ -1,5 +1,6 @@
 import React from "react";
 import lashB from "../Images/hero.jpg";
+import "../hero.css";
 import HeroService from "./HeroService";
 const Hero = () => {
   const bStyle = {

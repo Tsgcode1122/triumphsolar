@@ -1,11 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import servicesData from "./servicesData.json";
-
+import { serviceData } from "./ServiceData";
+import "../hero.css";
 const ServiceDetail = () => {
   console.log("ServiceDetail component rendered");
   const { serviceId } = useParams();
-  const service = servicesData.find((service) => service.id === serviceId);
+  const service = serviceData.find((service) => service.id === serviceId);
 
   return (
     <div className="pt-16">

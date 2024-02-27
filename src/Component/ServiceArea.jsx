@@ -1,5 +1,6 @@
 // ServiceArea.jsx
 import React from "react";
+import "../hero.css";
 import lashB from "../Images/service-bg.jpg";
 const ServiceArea = () => {
   const serviceAreas = [
@@ -26,16 +27,12 @@ const ServiceArea = () => {
             We offer and cover services in the following USA cities:
           </h3>
         </div>
-        <div className="grid grid-cols-2  gap-6">
+        <div className="grid grid-cols-2  gap-1">
           {serviceAreas.map((area) => (
             <div key={area.id} className="flex items-center mb-4">
-              <div className="mr-4">
-                {/* You can replace the location icon with an actual icon or an SVG */}
-                📍
-              </div>
+              <div className="mr-4">📍</div>
               <div>
                 <h4 className="text-lightC text-lg font-bold">{area.name}</h4>
-                {/* Additional details or services related to the area can be added here */}
               </div>
             </div>
           ))}

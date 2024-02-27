@@ -1,5 +1,9 @@
 import React from "react";
-
+import "../hero.css";
+import bef1 from "../Images/bef1.jpg";
+import aft1 from "../Images/aft1.jpg";
+import bef2 from "../Images/bef1.jpg";
+import aft2 from "../Images/bef1.jpg";
 import ReactCompareImage from "react-compare-image";
 const GalleryImg = () => {
   return (
@@ -9,14 +13,14 @@ const GalleryImg = () => {
         <h3 className="text-2xl font-bold text-blueC mb-4">Before & After</h3>
         <div className="mb-4">
           <ReactCompareImage
-            leftImage="src/Images/bef1.jpg"
-            rightImage="src/Images/aft1.jpg"
+            leftImage={bef1}
+            rightImage={aft1}
             aspectRatio="wider"
           />
         </div>
         <ReactCompareImage
-          leftImage="src/Images/bef2.jpg"
-          rightImage="src/Images/aft2.jpg"
+          leftImage={bef2}
+          rightImage={aft2}
           aspectRatio="wider"
         />
       </div>

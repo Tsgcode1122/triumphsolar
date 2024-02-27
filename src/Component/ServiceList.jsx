@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import serviceB from "../Images/bb.jpg";
-import videoSolar from "../Videos/solar.mp4";
-import servicesData from "./servicesData.json";
+
+import { serviceData } from "./ServiceData";
 
 const ServiceList = () => {
   const bStyle = {
@@ -10,21 +10,15 @@ const ServiceList = () => {
   };
   return (
     <>
-      <div
-        className="m-0 pb-8 bg-cover bg-center justify-center text-center sm:px-6   bg-no-repeat"
-        style={bStyle}
-      >
+      <div className="m-0 pb-8 bg-lightC bg-center justify-center text-center sm:px-6   bg-no-repeat">
         <div>
           <h2 className="text-redC">OUR SERVICES</h2>
           <h3 className="text-2xl font-bold text-blueC mb-4">
             providing the Best Services
           </h3>
         </div>
-        {servicesData.map((service, index) => (
-          <div
-            key={index}
-            className="m-8 bg-lightC border-2 border-solid border-lightC rounded-xl p-2  box-shad border-design"
-          >
+        {serviceData.map((service, index) => (
+          <div key={index} className="m-8 bg-lightC  box-shad border-design">
             {service.video ? (
               <video
                 src={service.video}
@@ -42,7 +36,7 @@ const ServiceList = () => {
                 className="border-des max-h-[20rem] w-full"
               />
             )}
-            <div className="m">
+            <div className="p-2">
               <h2 className="text-blueC text-xl font-bold">
                 {service.service_name}
               </h2>

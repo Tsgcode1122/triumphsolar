@@ -1,5 +1,6 @@
 import React from "react";
 import { IoMdCall } from "react-icons/io";
+import "../hero.css";
 const reviews = [
   {
     id: 1,
@@ -55,7 +56,7 @@ const Reviews = () => {
         {reviews.map((review) => (
           <div
             key={review.id}
-            className="bg-white shadow-md rounded-md p-4 mb-4 box-shad "
+            className="bg-white box-shad rounded-md p-4 mb-4 box-shad "
           >
             <div className="flex justify-between items-center mb-2">
               <div className="flex items-center">
@@ -77,14 +78,14 @@ const Reviews = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center  items-center bg-lightC mt-[-10px] box-shad p-4 ">
+      <div className="flex justify-center  items-center bg-lightC mt-[-10px]  p-4 ">
         <a>
-          <button className="bg-redC text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 shadow mr-3">
+          <button className="bg-redC text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 box-shad mr-3">
             More Reviews
           </button>
         </a>
         <a href="tel:+14016326426">
-          <button className="bg-redC text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 shadow mr-3 flex items-center gap-4">
+          <button className="bg-redC text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 box-shad mr-3 flex items-center gap-4">
             <IoMdCall /> (401) 632 6426
           </button>
         </a>
