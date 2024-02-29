@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Outlet, Link, useNavigate } from "react-router-dom";
 import "../hero.css";
+import brick from "../Images/icons/staff.png";
 import { FaInstagram } from "react-icons/fa";
 import { IoMdCall } from "react-icons/io";
 import { CiLocationOn } from "react-icons/ci";
@@ -67,21 +68,29 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className="max-w-2xl mx-auto  m-0 bg-lightC">
+      <div className="max-w-2xl mx-auto   m-0 bg-blueC tsgf">
         <div className="text-center bg-blueC pb-16 pt-8">
-          <h2 className="text-redC font-bold mb-4">CONTACT US</h2>
-          <h3 className="text-lightC text-xl font-bold mb-8">
-            Get An Instant Quote Now!
-          </h3>
-          <p className="text-lightC mb-4">
+          <div className=" flex flex-col items-center relative my-8">
+            <img
+              src={brick}
+              className="max-w-full h-[3rem] rounded-full bg-blueC p-2 absolute mt-[-2rem] box-shad "
+              alt="Flooring"
+            />
+            <h2 className="text-redC tsgB subheadb  font-bold">CONTACT US</h2>
+            <p className="text-lightC font-tsg mt-[3rem] text-xl bg-blueC p-2 absolute  rounded-xl">
+              Get An Instant Quote Now!
+            </p>
+          </div>
+
+          <p className="text-lightC mb-4  text-justify mx-8 tsgf">
             Questions, feedback, or inquiries? Connect with us by phone, email,
             or the form below. Whether you're an artist, enthusiast, or curious
             visitor, let's start a conversation and explore possibilities
             together. Our customer support is ready to hear you. Get a quote
             now!
           </p>
-          <div className="flex flex-col items-center justify-center  bg-transparent">
-            <div className="flex px-4 justify-center mb-4">
+          <div className="flex flex-col items-center justify-center  bg-transparent tsgf">
+            <div className="flex px-4 justify-center mb-4 tsgf">
               <a href="https://www.instagram.com/triumphsolarpicasso?igsh=MWF5d21nN3p4bWEzZQ==">
                 <button className=" text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 box-shad mr-3 flex items-center gap-4">
                   <FaInstagram /> triumphsolarpicasso
@@ -156,7 +165,7 @@ const ContactForm = () => {
             <div>
               <label
                 htmlFor="phone"
-                className="block text-sm font-bold text-blueC"
+                className="block text-sm font-bold text-blueC font-tsg"
               >
                 Phone*
               </label>
@@ -174,7 +183,7 @@ const ContactForm = () => {
             <div>
               <label
                 htmlFor="phone"
-                className="block text-sm font-bold text-blueC"
+                className="block text-sm font-bold text-blueC font-tsg"
               >
                 Address*
               </label>
@@ -261,7 +270,7 @@ const ContactForm = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="border-2 bg-redC text-lightC font-bold rounded-xl px-8 py-2 inline-block hover:border-brightC hover:bg-transparent hover:text-black lg:text-xl"
+              className="border-2 bg-redC text-lightC font-bold rounded-xl px-8 py-2 inline-block tsgf"
             >
               Send
             </button>

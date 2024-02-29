@@ -10,22 +10,24 @@ const Hero = () => {
   return (
     <>
       <div
-        className="m-0  bg-cover bg-center justify-center text-center sm:px-6 xl:flex xl:flex-row-reverse xl:text-center xl:h-[90vh] xl:px-16 xl:justify-center xl:items-center xl:gap-4  bg-no-repeat "
+        className="m-0  bg-cover bg-center justify-center text-center  bg-no-repeat  "
         style={bStyle}
       >
-        <div className="p-8 pt-[12rem] pb-[10rem] bg-blueC bg-opacity-60 text-lightC h-full w-screen">
-          <div className="pb-4">
-            <h1 className="text-[70px] leading-10  font-bold "> TRIUMPH</h1>
-            <span className="text-lightC text-[35px] font-bold ">
+        <div className="p-8 pt-[12rem] pb-[10rem] bg-blueC bg-opacity-60 text-lightC h-full w-screen ">
+          <div className="pb-4 md:mt-12 lg:mt-24  ">
+            <h1 className="text-[70px] leading-10  font-bold font-tsg sm:text-[80px] sm:leading-[70px] md:text-[90px] lg:text-[100px] xl:text-[120px] ">
+              TRIUMPH
+            </h1>
+            <span className="text-lightC text-[35px] font-bold font-tsg sm:text-[40px] md:text-[42px] lg:text-[45px] xl:text-[50px]">
               SolarPicasso
             </span>
           </div>
-          <h3>
+          <p className="tsgf sm:text-[20px] sm:px-8 md:px-12 lg:px-24 lg:text-[22px] xl:text-[25px]  xl:px-32  ">
             Pioneering Excellence in Solar Cleaning, Comprehensive Pressure
             Washing, Painting, and Handyman Services for Residential and
             Commercial Properties
-          </h3>
-          <div className=" pt-8 gap-4 ">
+          </p>
+          <div className=" tsgf pt-8 gap-4 sm:text-[15px] lg:text-[17px]  xl:text-[20px]">
             <Link to="/Contact">
               {" "}
               <button className="bg-redC shadow-lightC  border-solid border-lightC rounded-md p-2 shadow  mr-3 ">

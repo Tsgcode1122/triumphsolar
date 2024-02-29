@@ -55,7 +55,7 @@ const Navbar = () => {
 
       {isSidebarOpen && (
         <motion.div
-          className="  md:hidden bg-white right-0  top-0 fixed z-50 w-[60%] h-full font-tsg  font-medium 
+          className="  md:hidden bg-white right-0  top-0 fixed z-50 w-[60%] h-full tsgf font-medium 
          shadow-md"
           initial={{ x: 500, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -157,14 +157,14 @@ const Navbar = () => {
         </motion.div>
       )}
 
-      <div className="hidden fixed w-full   md:flex navbar z-50 lg:px-8 xl:px-28 ">
+      <div className="hidden fixed w-full bg-lightC text-darkC  md:flex md:px-4  navbar z-50 lg:px-8 xl:px-28  ">
         <div className="flex-1">
           <Link to="/" className="btn btn-ghost text-xl">
             <img className="max-w-full h-[50px] " alt="Logo" />
           </Link>
         </div>
         <div className="flex-none ">
-          <ul className="menu menu-horizontal px-1 xl:text-[16px]">
+          <ul className="menu menu-horizontal px-1 md:text-[16px] ">
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -180,9 +180,7 @@ const Navbar = () => {
             <li>
               <Link to="/Gallery">Gallery</Link>
             </li>
-            <li>
-              <Link to="/ServiceArea">Service Area</Link>
-            </li>
+
             <li>
               <Link to="/Reviews">Reviews</Link>
             </li>

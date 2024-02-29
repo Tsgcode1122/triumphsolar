@@ -2,6 +2,7 @@
 import React from "react";
 import { Outlet, Link, useNavigate } from "react-router-dom";
 import "../hero.css";
+import brick from "../Images/icons/staff.png";
 import lashB from "../Images/service-bg.jpg";
 const ServiceAreass = () => {
   const serviceAreas = [
@@ -22,18 +23,24 @@ const ServiceAreass = () => {
   return (
     <>
       <div className="p-8   bg-cover bg-center" style={bStyle}>
-        <div className="text-center">
-          <h2 className="text-redC font-bold mb-4">SERVICE AREA</h2>
-          <h3 className="text-lightC text-xl font-bold mb-8">
-            We offer and cover services in the following USA cities:
-          </h3>
+        <div className=" flex flex-col items-center relative my-8">
+          <img
+            src={brick}
+            className="max-w-full h-[3rem] rounded-full bg-blueC p-2 absolute mt-[-2rem] box-shad "
+            alt="Flooring"
+          />
+          <h2 className="text-redC tsgB subheadb  font-bold">SERVICE AREA</h2>
+          <p className="text-lightC font-tsg mt-[3rem] text-xl bg-blueC p-2 absolute  rounded-xl">
+            Serving various cities :
+          </p>
         </div>
+
         <div className="grid grid-cols-2  gap-1">
           {serviceAreas.map((area) => (
-            <div key={area.id} className="flex items-center mb-4">
+            <div key={area.id} className="flex items-center my-4">
               <div className="mr-4">📍</div>
               <div>
-                <h4 className="text-lightC text-lg font-bold">{area.name}</h4>
+                <h4 className="text-lightC text-lg tsgf">{area.name}</h4>
               </div>
             </div>
           ))}

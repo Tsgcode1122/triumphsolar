@@ -66,10 +66,10 @@ const Whychoose = () => {
 
   return (
     <>
-      <div className=" bg-blueC pb-8">
+      <div className=" bg-blueC p-8 xl:px-48">
         <div
           id="why-choose-section"
-          className="    p-8  grid grid-cols-2 justify-center items-center text-center   gap-8"
+          className="     grid grid-cols-2 lg:grid-cols-4 justify-center items-center text-center   gap-8"
         >
           <div
             className=" flex  flex-col min-w-[10rem] justify-center items-center text-center mx-4 "
@@ -77,10 +77,10 @@ const Whychoose = () => {
           >
             <img src={icon1} className="h-16 mb-2" />
             <div>
-              <h2 className="text-redC m-0  text-25 font-bold">
+              <h2 className="text-redC m-0  text-2xl font-tsg font-bold">
                 {counts.supplies.toLocaleString()}+
               </h2>
-              <h4 className=" text-lightC block font-h4 italic text-primary-color font-medium text-lg leading-none">
+              <h4 className=" text-lightC block font-h4 text-primary-color font-medium text-lg leading-none tsgf">
                 Happy Clients
               </h4>
             </div>
@@ -89,10 +89,10 @@ const Whychoose = () => {
             <img src={icon2} className="h-16 mb-2" />
             <div>
               {" "}
-              <h2 className="text-redC ">
+              <h2 className="text-redC m-0  text-2xl font-tsg font-bold ">
                 {counts.customers.toLocaleString()}+
               </h2>
-              <h4 className=" text-lightC block mt-0 font-h4 italic text-primary-color font-medium text-lg leading-none">
+              <h4 className=" text-lightC block mt-0 font-h4 text-primary-color font-medium text-lg leading-none tsgf">
                 Project Done
               </h4>
             </div>
@@ -100,8 +100,10 @@ const Whychoose = () => {
           <div className="flex  flex-col min-w-[10rem] justify-center items-center text-center mx-4">
             <img src={icon3} className="h-16 mb-2" />
             <div>
-              <h2 className="text-redC">{counts.products}</h2>
-              <h4 className=" text-lightC block font-h4 italic text-primary-color font-medium text-lg leading-none">
+              <h2 className="text-redC m-0  text-2xl font-tsg font-bold">
+                {counts.products}
+              </h2>
+              <h4 className=" text-lightC block font-h4 text-primary-color font-medium text-lg leading-none tsgf">
                 Years of Experience
               </h4>
             </div>
@@ -109,16 +111,18 @@ const Whychoose = () => {
           <div className="flex  flex-col min-w-[10rem] justify-center items-center text-center mx-4">
             <img src={icon4} className="h-16 mb-2" />
             <div>
-              <h2 className="text-redC">{counts.partners}</h2>
-              <h4 className=" text-lightC block font-h4 italic text-primary-color font-medium text-lg leading-none">
+              <h2 className="text-redC m-0  text-2xl font-tsg font-bold">
+                {counts.partners}
+              </h2>
+              <h4 className=" text-lightC block font-h4 text-primary-color font-medium text-lg leading-none tsgf">
                 Staffs
               </h4>
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center lg:mt-8 ">
           <a href="tel:+14016326426">
-            <button className="bg-redC text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 shadow mr-3 flex items-center gap-4">
+            <button className="bg-redC text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 shadow m-4 tsgf flex items-center gap-4">
               <IoMdCall /> (401) 632 6426
             </button>
           </a>

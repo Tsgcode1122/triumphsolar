@@ -1,3 +1,5 @@
+import "./MinomuBlack-BWVKV.otf";
+
 import React, { useState, useEffect } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navbar from "./Component/Navbar";

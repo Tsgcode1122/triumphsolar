@@ -15,11 +15,13 @@ const Footer = () => {
     <>
       <div className="bg-lightC">
         <div
-          className=" grid grid-cols-2 gap-4 bg-cover bg-center text-lightC mt-8 box-shad px-4 pt-12 gb"
+          className=" grid grid-cols-2 gap-4 bg-cover bg-center text-lightC mt-8 box-shad px-8 pt-12 gb"
           style={bStyle}
         >
           <div className="pb-6">
-            <h3 className="text-redC mb-1">About Us</h3>
+            <h3 className="text-redC mb-1 font-bold font-tsg text-xl">
+              About Us
+            </h3>
             <p>
               {" "}
               Illuminate your home with TriumphSolarPicasso – specialists in
@@ -29,8 +31,10 @@ const Footer = () => {
             </p>
           </div>
           <div className="pb-6">
-            <h3 className="text-redC mb-1">Useful Links</h3>
-            <ul className="flex flex-col gap-3">
+            <h3 className="text-redC mb-1 font-tsg text-xl font-bold">
+              Useful Links
+            </h3>
+            <ul className="flex flex-col gap-3 tsgf">
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -49,7 +53,9 @@ const Footer = () => {
             </ul>
           </div>
           <div className="pb-6">
-            <h3 className="text-redC mb-1">Service List</h3>
+            <h3 className="text-redC mb-1 font-bold font-tsg text-xl">
+              Service List
+            </h3>
             <div className="flex flex-col gap-2">
               <p>Solar Diagnosis/Maintenance</p>
               <p>All Pressure Washing</p>
@@ -61,21 +67,23 @@ const Footer = () => {
             </div>
           </div>
           <div className="pb-6">
-            <h3 className="text-redC mb-1">Contact Us</h3>
-            <div className="flex flex-col gap-2">
+            <h3 className="text-redC mb-1 font-tsg text-xl font-bold">
+              Contact Us
+            </h3>
+            <div className="flex flex-col gap-2 tsgf">
               <a href="https://www.instagram.com/triumphsolarpicasso?igsh=MWF5d21nN3p4bWEzZQ==">
-                <button className=" flex items-center gap-4">
+                <button className=" flex items-center text-justify gap-4">
                   <FaInstagram /> triumphsolarpicasso
                 </button>
               </a>
               <a href="tel:+14016326426">
-                <button className=" flex items-center gap-4">
+                <button className=" flex items-center text-justify gap-4">
                   <IoMdCall /> (401) 632 6426
                 </button>
               </a>
 
               <a>
-                <button className=" flex items-center gap-4">
+                <button className=" flex text-justify items-center gap-4">
                   <CiLocationOn /> 123 Main St, City, United States
                 </button>
               </a>
@@ -88,6 +96,9 @@ const Footer = () => {
               </a>
             </div>
           </div>
+        </div>
+        <div className="text-center bg-blueC text-lightC p-4">
+          <p>&copy; 2024 TriumphSolar All rights reserved.</p>
         </div>
       </div>
     </>

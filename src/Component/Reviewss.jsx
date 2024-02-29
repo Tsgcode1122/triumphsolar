@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { IoMdCall } from "react-icons/io";
 import "../hero.css";
+import brick from "../Images/icons/light.png";
 const reviews = [
   {
     id: 1,
@@ -48,12 +49,18 @@ const Reviewss = () => {
   return (
     <>
       <div className="container mx-auto mt-8">
-        <div className="text-center">
-          <h2 className="text-redC font-bold mb-4">REVIEWS</h2>
-          <h3 className="text-blueC text-xl font-bold mb-8">
-            Our Clients Trust US
-          </h3>
+        <div className=" flex flex-col items-center relative mt-16 mb-12">
+          <img
+            src={brick}
+            className="max-w-full h-[3rem] rounded-full bg-lightC p-2 absolute mt-[-2rem] box-shad "
+            alt="Flooring"
+          />
+          <h2 className="text-redC tsgB subhead  font-bold">REVIEWS</h2>
+          <p className="text-blueC font-tsg mt-[3rem] text-xl bg-lightC p-2 absolute  rounded-xl">
+            Our Clients Trust Us
+          </p>
         </div>
+
         {reviews.map((review) => (
           <div
             key={review.id}
@@ -61,10 +68,12 @@ const Reviewss = () => {
           >
             <div className="flex justify-between items-center mb-2">
               <div className="flex items-center">
-                <div className="w-8 h-8 bg-blueC text-lightC rounded-full flex items-center justify-center font-semibold mr-2 box-shad">
+                <div className="w-8 h-8 bg-blueC text-lightC rounded-full flex items-center justify-center font-semibold mr-2 box-shad font-tsg">
                   {getInitials(review.name)}
                 </div>
-                <div className="text-lg font-semibold">{review.name}</div>
+                <div className="text-lg font-semibold font-tsg">
+                  {review.name}
+                </div>
               </div>
               <div className="flex items-center">
                 {[...Array(review.rating)].map((_, index) => (
@@ -74,12 +83,12 @@ const Reviewss = () => {
                 ))}
               </div>
             </div>
-            <div className="text-gray-500 mb-2">{review.date}</div>
-            <div className="text-darkC">{review.content}</div>
+            <div className="text-gray-500 tsgf mb-2">{review.date}</div>
+            <div className="text-darkC tsgf">{review.content}</div>
           </div>
         ))}
       </div>
-      <div className="flex justify-center  items-center bg-lightC mt-[-10px]  p-4 ">
+      <div className="flex justify-center  items-center bg-lightC mt-[-10px]  p-4 tsgf ">
         <Link to="/Reviews">
           <button className="bg-redC text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 box-shad mr-3">
             More Reviews

@@ -23,7 +23,7 @@ const ServiceDetail = () => {
 
   return (
     <>
-      <div className="pt-16">
+      <div className="pt-16 tsgf text-justify">
         <div className="pt-16  bg-center bg-cover text-center" style={bStyle}>
           <h1 className="p-[60px] text-lightC font-bold bg-blueC  bg-opacity-60 text-2xl">
             {service.service_name}

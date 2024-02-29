@@ -1,4 +1,4 @@
-import videoSolar from "../Videos/solar.mp4";
+import videoSolar from "../Images/solarr.jpg";
 import pressure from "../Images/pressure.jpg";
 import lands from "../Images/landscape.jpg";
 import painter from "../Images/painter.jpg";
@@ -14,10 +14,10 @@ import t7 from "../Images/tosin3.jpg";
 export const serviceData = [
   {
     id: "solar-service",
-    video: videoSolar,
+    img: videoSolar,
     service_name: "Solar Install/Cleaning",
     service_description:
-      "We specialize in a full spectrum of solar services, from installations to removals/reinstalls, cleanings, troubleshooting, and software updates. Our dedicated team ensures the seamless integration of cutting-edge solar systems, optimizing their performance through meticulous inspections.",
+      "We specialize in a full spectrum of solar services, from installations to removals/reinstalls, cleanings, troubleshooting, and software updates. Our dedicated team ensures the seamless integration of cutting-edge solar systems .",
     description:
       "Elevate your space with our unparalleled solar services, where precision meets perfection. Our expert team specializes in delivering state-of-the-art solar installations, ensuring that every component is strategically placed to harness maximum energy efficiency. Whether you're venturing into the world of solar power for the first time or upgrading your existing system, our meticulous installations are designed to meet your unique needs. But our commitment doesn't stop there – we go beyond installation. We understand the importance of maintaining your solar investment. That's why we offer comprehensive solar cleaning services. Our thorough cleaning approach ensures that your solar panels stay free from dirt, debris, and any factors that may compromise their performance. With our expert touch, you can rest assured that your solar system will continue to generate optimal energy, contributing to a sustainable and eco-friendly future.",
     image: t1,

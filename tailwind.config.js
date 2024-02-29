@@ -10,17 +10,14 @@ export default {
         redC: "#BF0A30",
       },
       fontFamily: {
-        tsg: ["Chakra Petch", "sans-serif"],
-        tsgDancing: ["BLOVERLY Regular"],
+        tsg: ["Brussels City"],
+        tsgDancing: ["Minomu "],
       },
       screens: {
-        ix: "280px",
+        iix: { max: "320px" },
 
-        ixl: "321px",
-        // => @media (min-width: 1024px) { ... }
-
-        ixsm: "400px",
-        // => @media (min-width: 1280px) { ... }
+        ixr: { min: "321px", max: "399px" },
+        ixi: { min: "400px", max: "499px" },
       },
     },
   },

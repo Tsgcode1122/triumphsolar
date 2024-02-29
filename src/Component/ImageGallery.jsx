@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../hero.css";
+import brick from "../Images/icons/light.png";
 import Image1 from "../Images/image1.jpg";
 import Image2 from "../Images/image2.jpg";
 import Image3 from "../Images/image3.jpg";
@@ -10,6 +11,7 @@ import Image7 from "../Images/image7.jpg";
 import Image8 from "../Images/image8.jpg";
 import Image9 from "../Images/image9.jpg";
 import Image10 from "../Images/image10.jpg";
+
 import { IoMdCall } from "react-icons/io";
 import { Link } from "react-router-dom";
 const ImageGallery = () => {
@@ -42,12 +44,19 @@ const ImageGallery = () => {
   return (
     <>
       <div className="bg-lightC">
-        <div className="justify-center text-center pt-8">
-          <h2 className="text-redC">GALLERY</h2>
-          <h3 className="text-2xl font-bold text-blueC mb-4">Our Projects</h3>
+        <div className=" flex flex-col items-center relative mt-16">
+          <img
+            src={brick}
+            className="max-w-full h-[3rem] rounded-full bg-lightC p-2 absolute mt-[-2rem] box-shad "
+            alt="Flooring"
+          />
+          <h2 className="text-redC tsgB subhead  font-bold">GALLERY</h2>
+          <p className="text-blueC font-tsg mt-[3rem] text-xl bg-lightC p-2 absolute  rounded-xl">
+            Our Projects
+          </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 bg-lightC pt-16  pb-8 px-4 gb box-shad relative">
+        <div className="grid grid-cols-2 gap-3 bg-lightC pt-16 mt-12  pb-8 px-4 gb box-shad relative">
           {images.map((image, index) => {
             let height = image.height;
             let marginTop = 0;
@@ -113,7 +122,7 @@ const ImageGallery = () => {
             </div>
           </div>
         )}
-        <div className="flex relative justify-center  items-center bg-lightC mt-[-10px]  p-4 box-shad gt">
+        <div className="flex relative justify-center  items-center bg-lightC mt-[-10px]  p-4 box-shad gt tsgf">
           <Link to="/Contact">
             <button className="bg-redC text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 shadow mr-3">
               Get Free Quote!!!

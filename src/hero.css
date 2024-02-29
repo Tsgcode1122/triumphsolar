@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "Minomu";
+  src:
+    local("Minomu "),
+    url(MinomuBlack-BWVKV.otf) format("otf");
+}
+@font-face {
+  font-family: "Black North";
+  src:
+    local("Black North"),
+    url(Blacknorthdemo-mLE25.otf) format("otf");
+}
+.tsgf {
+  font-family: "Minomu", sans-serif;
+}
+.tsgB {
+  font-family: "Black North", sans-serif;
+}
+
 .custom-shadow {
   box-shadow:
     0 4px 6px -5px red,
@@ -45,4 +64,33 @@
 
 .hide {
   display: none;
+}
+.subhead {
+  background-color: #fafafa;
+  display: inline-block;
+  padding: 1.5rem 4rem 1.5rem 4rem;
+  border: 1px solid #fafafa;
+  box-shadow: 1px 1px 7px -1px rgb(0, 0, 0);
+  border-radius: 20px 5px 20px 5px;
+}
+.subheadb {
+  background-color: #002868;
+  display: inline-block;
+  padding: 1.5rem 4rem 1.5rem 4rem;
+  border: 1px solid #002868;
+  box-shadow: 1px 1px 7px -1px rgb(0, 0, 0);
+  border-radius: 20px 5px 20px 5px;
+}
+button:hover {
+  transition: background 0.8s ease-in-out;
+  background: #002868;
+  border-right: 1px solid #bf0a30;
+  border-bottom: 1px solid #bf0a30;
+}
+.menu li:hover {
+  transition: background 0.8s ease-in-out;
+  background: #002868;
+  color: #fafafa;
+  border-right: 1px solid #bf0a30;
+  border-bottom: 1px solid #bf0a30;
 }

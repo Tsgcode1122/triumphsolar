@@ -39,7 +39,7 @@ const MovingText = () => {
         variants={textVariants}
         initial="initial"
         animate={controls}
-        className="text-[15px] text-white font-tsg flex"
+        className="text-[15px] md:text-[18px] text-white tsgf flex"
       >
         <span className="ml-8 items-center flex  gap-2">
           <img className="h-4" src={img1} /> God first
