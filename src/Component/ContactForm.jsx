@@ -95,7 +95,7 @@ const ContactForm = () => {
               Get a quote now!
             </p>
             <div className="flex flex-col items-center justify-center  bg-transparent tsgf">
-              <div className="flex px-4 justify-center  items-center ">
+              <div className="flex px-4 justify-center  items-center ixi:gap-4 mb-4 tsgf ixi:flex-col iix:flex-col iix:gap-4 ixr:flex-col ixr:gap-4">
                 <a href="https://www.instagram.com/triumphsolarpicasso?igsh=MWF5d21nN3p4bWEzZQ==">
                   <button className=" text-lightC shadow-lightC border-solid border-lightC rounded-md p-2 box-shad mr-3 flex items-center gap-4">
                     <FaInstagram /> triumphsolarpicasso

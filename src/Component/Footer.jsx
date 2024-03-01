@@ -34,7 +34,7 @@ const Footer = () => {
             <h3 className="text-redC mb-1 font-tsg text-xl font-bold">
               Useful Links
             </h3>
-            <ul className="flex flex-col gap-3 tsgf iix:flex-row iix:gap-1 ixr:flex-row ixi:flex-row ">
+            <ul className="flex flex-col gap-3 tsgf iix:flex  iix:flex-row iix:gap-1 ixr:flex-row ixr:flex ixi:flex ixi:flex-row ">
               <li>
                 <Link to="/">Home</Link>
               </li>
