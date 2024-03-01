@@ -41,7 +41,7 @@ const reviews = [
 
 const Reviewss = () => {
   useZoomInAnimation(".zoom");
-  useLeftToRightSwipe(".left-in");
+
   const getInitials = (name) => {
     const names = name.split(" ");
     return names
@@ -52,8 +52,8 @@ const Reviewss = () => {
 
   return (
     <>
-      <div className=" mx-8 mt-8 md:mx-10 lg:mx-16 xl:mx-36">
-        <div className=" flex flex-col items-center relative mt-16 mb-12 zoom">
+      <div className=" mx-8 mt-8 md:mx-10 lg:mx-16 xl:mx-36 zoom">
+        <div className=" flex flex-col items-center relative mt-16 mb-12 ">
           <img
             src={brick}
             className="max-w-full h-[3rem] rounded-full bg-lightC p-2 absolute mt-[-2rem] box-shad "
@@ -64,7 +64,7 @@ const Reviewss = () => {
             Our Clients Trust Us
           </p>
         </div>
-        <div className="sm:grid sm:grid-cols-2 gap-4 left-in ">
+        <div className="sm:grid sm:grid-cols-2 gap-4  ">
           {reviews.map((review) => (
             <div
               key={review.id}

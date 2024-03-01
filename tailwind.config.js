@@ -4,7 +4,6 @@ export default {
   theme: {
     screens: {
       iix: { max: "325px" },
-
       ixr: { min: "326px", max: "399px" },
       ixi: { min: "400px", max: "499px" },
     },
@@ -23,13 +22,13 @@ export default {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
-    darkTheme: "light", // name of one of the included themes for dark mode
+    themes: false,
+    darkTheme: "light",
     base: true,
     styled: false,
-    utils: true, // adds responsive and modifier utility classes
-    prefix: "", // prefix for daisyUI classnames (components, modifiers and responsive class names. Not colors)
-    logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
-    themeRoot: ":root", // The element that receives theme color CSS variables
+    utils: true,
+    prefix: "",
+    logs: true,
+    themeRoot: ":root",
   },
 };
