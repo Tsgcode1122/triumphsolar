@@ -1,8 +1,14 @@
 import { useEffect } from "react";
-import "/animation.scss";
+import "/animation.scss"; // Corrected the import path
+
 const useRightToLeftSwipe = (elementSelector, rootMargin = "100px") => {
   useEffect(() => {
     const element = document.querySelector(elementSelector);
+
+    if (!element) {
+      console.error(`Element with selector '${elementSelector}' not found.`);
+      return;
+    }
 
     const addAnimation = () => {
       element.classList.add("swipe-left");

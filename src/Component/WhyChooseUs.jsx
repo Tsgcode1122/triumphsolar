@@ -5,7 +5,6 @@ import brick from "../Images/icons/light.png";
 import useZoomInAnimation from "../animation/useZoomInAnimation";
 import useLeftToRightSwipe from "../animation/useLeftToRightSwipe";
 const WhyChooseUs = () => {
-  useLeftToRightSwipe(".left-in");
   useZoomInAnimation(".zoom");
   return (
     <>
@@ -22,7 +21,7 @@ const WhyChooseUs = () => {
           </p>
         </div>
 
-        <div className="text-center md:grid md:grid-cols-2 md:gap-4 ">
+        <div className="text-center md:grid md:grid-cols-2 md:gap-4 zoom ">
           <div className="my-4 text-lightC bg-blueC border-lightC border-design p-6  box-shad ">
             <h3 className="font-bold font-tsg text-redC  md:text-xl xl:text-[25px]">
               EXPERTISE
@@ -33,7 +32,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
 
-          <div className="my-4 text-lightC bg-blueC border-lightC border-design p-6  box-shad left-in">
+          <div className="my-4 text-lightC bg-blueC border-lightC border-design p-6  box-shad ">
             <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px]">
               VERSATILITY
             </h3>
@@ -55,7 +54,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
 
-          <div className="my-4 text-lightC bg-blueC border-lightC border-design p-6  box-shad left-in">
+          <div className="my-4 text-lightC bg-blueC border-lightC border-design p-6  box-shad ">
             <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px]">
               CUSTOMER SATISFACTION
             </h3>

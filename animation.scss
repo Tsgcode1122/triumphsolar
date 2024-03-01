@@ -36,7 +36,7 @@
 
 @keyframes swipeRightAnimation {
   0% {
-    transform: translateX(-50px);
+    transform: translateX(-20px);
   }
   100% {
     transform: translateX(0);
@@ -50,7 +50,7 @@
 
 @keyframes swipeLeftAnimation {
   0% {
-    transform: translateX(50%);
+    transform: translateX(20px);
   }
   100% {
     transform: translateX(0);

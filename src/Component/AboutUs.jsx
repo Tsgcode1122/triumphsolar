@@ -5,10 +5,12 @@ import aboutu from "../Images/t2.jpg";
 import Whychoose from "./Whychoose";
 import brick from "../Images/icons/light.png";
 import useLeftToRightSwipe from "../animation/useLeftToRightSwipe";
+import useRightToLeftSwipe from "../animation/useRightToLeftSwipe";
 import useZoomInAnimation from "../animation/useZoomInAnimation";
 import "../hero.css";
 const AboutUs = () => {
   useLeftToRightSwipe(".left-in");
+  useRightToLeftSwipe(".right-in");
   useZoomInAnimation(".zoom");
   const bStyle = {
     backgroundImage: `url(${about})`,
@@ -48,7 +50,7 @@ const AboutUs = () => {
                 </button>
               </Link>
             </div>
-            <div className="lg:flex-1 left-in">
+            <div className="lg:flex-1 right-in">
               <img
                 src={aboutu}
                 className="max-w-full border-design border-design border-solid flex flex-wrap gap-1 box-shad"
