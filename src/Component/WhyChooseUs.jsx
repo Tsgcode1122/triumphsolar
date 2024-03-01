@@ -4,12 +4,15 @@ import "../hero.css";
 import brick from "../Images/icons/light.png";
 import useZoomInAnimation from "../animation/useZoomInAnimation";
 import useLeftToRightSwipe from "../animation/useLeftToRightSwipe";
+import useRightToLeftSwipe from "../animation/useRightToLeftSwipe";
 const WhyChooseUs = () => {
   useZoomInAnimation(".zoom");
+  useLeftToRightSwipe(".left-in");
+  useRightToLeftSwipe(".right-in");
   return (
     <>
       <div className="p-8 sm:px-16 lg:px-24 xl:px-36 ">
-        <div className=" flex flex-col items-center relative my-8 zoom">
+        <div className=" flex flex-col items-center relative my-8  zoom">
           <img
             src={brick}
             className="max-w-full h-[3rem] rounded-full bg-lightC p-2 absolute mt-[-2rem] box-shad "
@@ -21,7 +24,7 @@ const WhyChooseUs = () => {
           </p>
         </div>
 
-        <div className="text-center md:grid md:grid-cols-2 md:gap-4 zoom ">
+        <div className="text-center md:grid md:grid-cols-2 md:gap-4">
           <div className="my-4 text-lightC bg-blueC border-lightC border-design p-6  box-shad ">
             <h3 className="font-bold font-tsg text-redC  md:text-xl xl:text-[25px]">
               EXPERTISE
@@ -33,7 +36,7 @@ const WhyChooseUs = () => {
           </div>
 
           <div className="my-4 text-lightC bg-blueC border-lightC border-design p-6  box-shad ">
-            <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px]">
+            <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px] right-in">
               VERSATILITY
             </h3>
             <p className="tsgf text-justify  xl:text-xl">
@@ -44,7 +47,7 @@ const WhyChooseUs = () => {
           </div>
 
           <div className="my-4 text-lightC bg-blueC border-lightC p-6   border-design box-shad">
-            <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px]">
+            <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px] right-in">
               QUALITY SERVICE
             </h3>
             <p className="tsgf text-justify  xl:text-xl">
@@ -55,7 +58,7 @@ const WhyChooseUs = () => {
           </div>
 
           <div className="my-4 text-lightC bg-blueC border-lightC border-design p-6  box-shad ">
-            <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px]">
+            <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px] right-in">
               CUSTOMER SATISFACTION
             </h3>
             <p className="tsgf text-justify xl:text-xl">
