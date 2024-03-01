@@ -48,7 +48,7 @@ const Reviewss = () => {
 
   return (
     <>
-      <div className="container mx-auto mt-8">
+      <div className=" mx-8 mt-8 md:mx-10 lg:mx-16 xl:mx-36">
         <div className=" flex flex-col items-center relative mt-16 mb-12">
           <img
             src={brick}
@@ -60,33 +60,34 @@ const Reviewss = () => {
             Our Clients Trust Us
           </p>
         </div>
-
-        {reviews.map((review) => (
-          <div
-            key={review.id}
-            className="bg-white box-shad rounded-md p-4 mb-4 box-shad "
-          >
-            <div className="flex justify-between items-center mb-2">
-              <div className="flex items-center">
-                <div className="w-8 h-8 bg-blueC text-lightC rounded-full flex items-center justify-center font-semibold mr-2 box-shad font-tsg">
-                  {getInitials(review.name)}
-                </div>
-                <div className="text-lg font-semibold font-tsg">
-                  {review.name}
-                </div>
-              </div>
-              <div className="flex items-center">
-                {[...Array(review.rating)].map((_, index) => (
-                  <div key={index} className="text-yellow-500 mr-1">
-                    ⭐
+        <div className="sm:grid sm:grid-cols-2 gap-4 ">
+          {reviews.map((review) => (
+            <div
+              key={review.id}
+              className="bg-white box-shad rounded-md p-4 mb-4 box-shad "
+            >
+              <div className="flex justify-between items-center mb-2">
+                <div className="flex items-center">
+                  <div className="w-8 h-8 bg-blueC text-lightC rounded-full flex items-center justify-center font-semibold mr-2 box-shad font-tsg">
+                    {getInitials(review.name)}
                   </div>
-                ))}
+                  <div className="text-lg font-semibold font-tsg">
+                    {review.name}
+                  </div>
+                </div>
+                <div className="flex items-center">
+                  {[...Array(review.rating)].map((_, index) => (
+                    <div key={index} className="text-yellow-500 mr-1">
+                      ⭐
+                    </div>
+                  ))}
+                </div>
               </div>
+              <div className="text-gray-500 tsgf mb-2">{review.date}</div>
+              <div className="text-darkC tsgf">{review.content}</div>
             </div>
-            <div className="text-gray-500 tsgf mb-2">{review.date}</div>
-            <div className="text-darkC tsgf">{review.content}</div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <div className="flex justify-center  items-center bg-lightC mt-[-10px]  p-4 tsgf ">
         <Link to="/Reviews">

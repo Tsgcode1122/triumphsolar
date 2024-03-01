@@ -15,10 +15,10 @@ const Footer = () => {
     <>
       <div className="bg-lightC">
         <div
-          className=" grid grid-cols-2 gap-4 bg-cover bg-center text-lightC mt-8 box-shad px-8 pt-12 gb"
+          className=" grid grid-cols-2 gap-4 sm:gap-6 bg-cover bg-center text-lightC mt-8 box-shad px-8 pt-12 lg:grid-cols-4 xl:px-36 gb  iix:grid-cols-1  ixr:grid-cols-1 ixi:grid-cols-1 ixr:px-4 iix:px-2 ixi:px-4"
           style={bStyle}
         >
-          <div className="pb-6">
+          <div className="pb-6 iix:pb-2 ixr:pb-2 ixi:pb-2  ">
             <h3 className="text-redC mb-1 font-bold font-tsg text-xl">
               About Us
             </h3>
@@ -30,11 +30,11 @@ const Footer = () => {
               gutter cleaning, and versatile handyman solutions.
             </p>
           </div>
-          <div className="pb-6">
+          <div className="pb-6 iix:pb-2 ixr:pb-2 ixi:pb-2 ">
             <h3 className="text-redC mb-1 font-tsg text-xl font-bold">
               Useful Links
             </h3>
-            <ul className="flex flex-col gap-3 tsgf">
+            <ul className="flex flex-col gap-3 tsgf iix:flex-row iix:gap-1 ixr:flex-row ixi:flex-row ">
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -52,7 +52,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="pb-6">
+          <div className="pb-6 iix:pb-2 ixr:pb-2 ixi:pb-2  ">
             <h3 className="text-redC mb-1 font-bold font-tsg text-xl">
               Service List
             </h3>
@@ -66,7 +66,7 @@ const Footer = () => {
               <p>and handyman services...</p>
             </div>
           </div>
-          <div className="pb-6">
+          <div className="pb-6 iix:pb-2 ixr:pb-2 ixi:pb-2  ">
             <h3 className="text-redC mb-1 font-tsg text-xl font-bold">
               Contact Us
             </h3>

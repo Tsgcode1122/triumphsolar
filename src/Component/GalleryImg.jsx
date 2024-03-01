@@ -13,27 +13,31 @@ const GalleryImg = () => {
         <div className=" flex flex-col items-center relative my-8">
           <img
             src={brick}
-            className="max-w-full h-[3rem] rounded-full bg-lightC p-2 absolute mt-[-2rem] box-shad "
+            className="max-w-full h-[3rem]  rounded-full bg-lightC p-2 absolute mt-[-2rem] box-shad "
             alt="Flooring"
           />
-          <h2 className="text-redC tsgB subhead  font-bold">TRANSFORMATION</h2>
-          <p className="text-blueC font-tsg mt-[3rem] text-xl bg-lightC p-2 absolute  rounded-xl">
+          <h2 className="text-redC tsgB subhead xl:text-xl font-bold">
+            TRANSFORMATION
+          </h2>
+          <p className="text-blueC font-tsg mt-[3rem] text-xl bg-lightC p-2 absolute xl:text-[25px] rounded-xl">
             Before & After
           </p>
         </div>
 
-        <div className="mb-4">
+        <div className="lg:grid lg:grid-cols-2 gap-4 items-center">
+          <div className="mb-4 ">
+            <ReactCompareImage
+              leftImage={bef1}
+              rightImage={aft1}
+              aspectRatio="wider"
+            />
+          </div>
           <ReactCompareImage
-            leftImage={bef1}
-            rightImage={aft1}
+            leftImage={bef2}
+            rightImage={aft2}
             aspectRatio="wider"
           />
         </div>
-        <ReactCompareImage
-          leftImage={bef2}
-          rightImage={aft2}
-          aspectRatio="wider"
-        />
       </div>
     </>
   );

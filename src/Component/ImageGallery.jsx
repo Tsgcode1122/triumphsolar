@@ -43,20 +43,22 @@ const ImageGallery = () => {
 
   return (
     <>
-      <div className="bg-lightC">
+      <div className="bg-lightC xl:mx-36">
         <div className=" flex flex-col items-center relative mt-16">
           <img
             src={brick}
             className="max-w-full h-[3rem] rounded-full bg-lightC p-2 absolute mt-[-2rem] box-shad "
             alt="Flooring"
           />
-          <h2 className="text-redC tsgB subhead  font-bold">GALLERY</h2>
-          <p className="text-blueC font-tsg mt-[3rem] text-xl bg-lightC p-2 absolute  rounded-xl">
+          <h2 className="text-redC tsgB subhead xl:text-xl font-bold">
+            GALLERY
+          </h2>
+          <p className="text-blueC font-tsg mt-[3rem] text-xl bg-lightC p-2 absolute xl:text-[25px] rounded-xl">
             Our Projects
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 bg-lightC pt-16 mt-12  pb-8 px-4 gb box-shad relative">
+        <div className="grid grid-cols-2 gap-3 bg-lightC pt-16 mt-12  pb-8 px-4 gb box-shad relative   md:px-8 md:pt-16 lg:px-16 lg:pt-24 xl">
           {images.map((image, index) => {
             let height = image.height;
             let marginTop = 0;
@@ -67,6 +69,17 @@ const ImageGallery = () => {
             if (index === 0) {
               marginTop = -50;
             }
+            // Adjust height for large screens
+            if (height !== "300px" && window.innerWidth >= 1280) {
+              height = "400px";
+            }
+            if (index === 0 && window.innerWidth >= 1280) {
+              height = "450px";
+            }
+            if (index === 9 && window.innerWidth >= 1280) {
+              height = "450px";
+            }
+
             return (
               <>
                 <div
@@ -84,7 +97,7 @@ const ImageGallery = () => {
                           : "",
                     boxShadow: "1px 1px 7px -1px rgb(0, 0, 0)",
                   }}
-                  className="rounded-md  cursor-pointer "
+                  className="rounded-md md:rounded-3xl  cursor-pointer "
                   onClick={() => handleImageClick(image)}
                 >
                   <img
@@ -95,7 +108,7 @@ const ImageGallery = () => {
                       height: "100%",
                       objectFit: "cover",
                     }}
-                    className="rounded-md shadow-2xl"
+                    className="rounded-md shadow-2xl "
                   />
                 </div>
               </>
@@ -103,7 +116,7 @@ const ImageGallery = () => {
           })}
         </div>
         {modalVisible && (
-          <div className="fixed top-0 left-0 w-full h-full bg-opacity-50 backdrop-filter backdrop-blur flex items-center justify-center">
+          <div className="fixed top-0 left-0 w-full h-full bg-opacity-50 backdrop-filter backdrop-blur flex items-center justify-center z-40">
             <div className="bg-white p-4 rounded-md w-full max-w-3xl relative">
               <button
                 className="absolute top-0 right-0 p-2 text-redC bg-lightC rounded-xl box-shad "

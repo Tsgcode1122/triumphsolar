@@ -14,9 +14,9 @@ export default {
         tsgDancing: ["Minomu "],
       },
       screens: {
-        iix: { max: "320px" },
+        iix: { max: "325px" },
 
-        ixr: { min: "321px", max: "399px" },
+        ixr: { min: "326px", max: "399px" },
         ixi: { min: "400px", max: "499px" },
       },
     },

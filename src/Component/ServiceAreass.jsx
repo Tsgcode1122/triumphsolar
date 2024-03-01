@@ -22,20 +22,25 @@ const ServiceAreass = () => {
   };
   return (
     <>
-      <div className="p-8   bg-cover bg-center" style={bStyle}>
+      <div
+        className="p-8 sm:px-16 lg:px-20 xl:px-36 bg-cover bg-center"
+        style={bStyle}
+      >
         <div className=" flex flex-col items-center relative my-8">
           <img
             src={brick}
             className="max-w-full h-[3rem] rounded-full bg-blueC p-2 absolute mt-[-2rem] box-shad "
             alt="Flooring"
           />
-          <h2 className="text-redC tsgB subheadb  font-bold">SERVICE AREA</h2>
-          <p className="text-lightC font-tsg mt-[3rem] text-xl bg-blueC p-2 absolute  rounded-xl">
+          <h2 className="text-redC tsgB subheadb xl:text-xl font-bold">
+            SERVICE AREA
+          </h2>
+          <p className="text-lightC font-tsg mt-[3rem] xl:text-[25px] text-xl bg-blueC p-2 absolute  rounded-xl">
             Serving various cities :
           </p>
         </div>
 
-        <div className="grid grid-cols-2  gap-1">
+        <div className="grid grid-cols-2  gap-1 sm:grid-cols-3 lg:grid-cols-4 ">
           {serviceAreas.map((area) => (
             <div key={area.id} className="flex items-center my-4">
               <div className="mr-4">📍</div>
