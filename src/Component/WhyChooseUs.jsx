@@ -24,9 +24,9 @@ const WhyChooseUs = () => {
           </p>
         </div>
 
-        <div className="text-center md:grid md:grid-cols-2 md:gap-4">
+        <div className="text-center md:grid md:grid-cols-2 md:gap-4 zoom">
           <div className="my-4 text-lightC bg-blueC border-lightC border-design p-6  box-shad ">
-            <h3 className="font-bold font-tsg text-redC  md:text-xl xl:text-[25px]">
+            <h3 className="font-bold font-tsg text-redC  md:text-xl xl:text-[25px] left-in">
               EXPERTISE
             </h3>
             <p className="tsgf text-justify  xl:text-xl">
@@ -36,7 +36,7 @@ const WhyChooseUs = () => {
           </div>
 
           <div className="my-4 text-lightC bg-blueC border-lightC border-design p-6  box-shad ">
-            <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px] right-in">
+            <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px] left-in">
               VERSATILITY
             </h3>
             <p className="tsgf text-justify  xl:text-xl">
@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
           </div>
 
           <div className="my-4 text-lightC bg-blueC border-lightC p-6   border-design box-shad">
-            <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px] right-in">
+            <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px] rleft-in">
               QUALITY SERVICE
             </h3>
             <p className="tsgf text-justify  xl:text-xl">
@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
           </div>
 
           <div className="my-4 text-lightC bg-blueC border-lightC border-design p-6  box-shad ">
-            <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px] right-in">
+            <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px] left-in">
               CUSTOMER SATISFACTION
             </h3>
             <p className="tsgf text-justify xl:text-xl">
