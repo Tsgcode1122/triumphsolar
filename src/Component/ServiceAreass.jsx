@@ -4,7 +4,9 @@ import { Outlet, Link, useNavigate } from "react-router-dom";
 import "../hero.css";
 import brick from "../Images/icons/staff.png";
 import lashB from "../Images/service-bg.jpg";
+import useZoomInAnimation from "../animation/useZoomInAnimation";
 const ServiceAreass = () => {
+  useZoomInAnimation(".zoom");
   const serviceAreas = [
     { id: 1, name: "123 Main St, City" },
     { id: 2, name: "456 Oak St, City" },
@@ -26,7 +28,7 @@ const ServiceAreass = () => {
         className="p-8 sm:px-16 lg:px-20 xl:px-36 bg-cover bg-center"
         style={bStyle}
       >
-        <div className=" flex flex-col items-center relative my-8">
+        <div className=" flex flex-col items-center relative my-8 zoom">
           <img
             src={brick}
             className="max-w-full h-[3rem] rounded-full bg-blueC p-2 absolute mt-[-2rem] box-shad "

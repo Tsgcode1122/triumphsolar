@@ -11,10 +11,11 @@ import Image7 from "../Images/image7.jpg";
 import Image8 from "../Images/image8.jpg";
 import Image9 from "../Images/image9.jpg";
 import Image10 from "../Images/image10.jpg";
-
+import useZoomInAnimation from "../animation/useZoomInAnimation";
 import { IoMdCall } from "react-icons/io";
 import { Link } from "react-router-dom";
 const ImageGallery = () => {
+  useZoomInAnimation(".zoom");
   const images = [
     { id: 1, src: Image1, height: "250px" },
     { id: 2, src: Image2, height: "200px" },
@@ -44,7 +45,7 @@ const ImageGallery = () => {
   return (
     <>
       <div className="bg-lightC xl:mx-36">
-        <div className=" flex flex-col items-center relative mt-16">
+        <div className=" flex flex-col items-center relative mt-16 zoom">
           <img
             src={brick}
             className="max-w-full h-[3rem] rounded-full bg-lightC p-2 absolute mt-[-2rem] box-shad "

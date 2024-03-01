@@ -60,6 +60,7 @@
  */
 .zoom-in {
   animation: zoomIn 0.8s ease-in-out;
+  opacity: 0;
   transform: scale(1);
 }
 @keyframes zoomIn {

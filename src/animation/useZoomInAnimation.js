@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "../animation.scss";
+import "/animation.scss";
 
 const useZoomInAnimation = (elementSelectors, rootMargin = "100px") => {
   useEffect(() => {
@@ -14,7 +14,7 @@ const useZoomInAnimation = (elementSelectors, rootMargin = "100px") => {
           });
         } else {
           elements.forEach((element) => {
-            element.style.opacity = "0";
+            element.style.opacity = "1";
             element.classList.remove("zoom-in");
           });
         }

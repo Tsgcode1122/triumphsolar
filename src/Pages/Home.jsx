@@ -13,6 +13,7 @@ import ServiceAreass from "../Component/ServiceAreass";
 import Reviewss from "../Component/Reviewss";
 import ContactForm from "../Component/ContactForm";
 import Footer from "../Component/Footer";
+import ScrollToTopButton from "../Component/ScrollToTopButton";
 
 const Home = () => {
   useEffect(() => {
@@ -38,6 +39,7 @@ const Home = () => {
       <Reviewss />
       <ContactForm />
       <Footer />
+      <ScrollToTopButton />
     </>
   );
 };

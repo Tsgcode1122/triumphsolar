@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "..animation.scss";
+import "/animation.scss";
 const useRightToLeftSwipe = (elementSelector, rootMargin = "100px") => {
   useEffect(() => {
     const element = document.querySelector(elementSelector);

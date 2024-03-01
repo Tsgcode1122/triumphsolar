@@ -3,6 +3,7 @@ import lashB from "../Images/b2.jpg";
 import ServiceList from "../Component/ServiceList";
 import ContactForm from "../Component/ContactForm";
 import Footer from "../Component/Footer";
+import ScrollToTopButton from "../Component/ScrollToTopButton";
 const Services = () => {
   useEffect(() => {
     // Scroll to the top on component mount
@@ -22,6 +23,7 @@ const Services = () => {
         <ServiceList />
         <ContactForm />
         <Footer />
+        <ScrollToTopButton />
       </div>
     </>
   );

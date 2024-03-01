@@ -3,15 +3,18 @@ import { Link } from "react-router-dom";
 import serviceB from "../Images/bb.jpg";
 import brick from "../Images/icons/light.png";
 import { serviceData } from "./ServiceData";
-
+import useZoomInAnimation from "../animation/useZoomInAnimation";
+import useLeftToRightSwipe from "../animation/useLeftToRightSwipe";
 const ServiceList = () => {
+  useZoomInAnimation(".zoom");
+  useLeftToRightSwipe(".left-in");
   const bStyle = {
     backgroundImage: `url(${serviceB})`,
   };
   return (
     <>
       <div className="m-0 p-8 bg-lightC bg-center justify-center text-center sm:px-6   bg-no-repeat iix:px-4 ixi:px-6 ixr:px-6">
-        <div className=" flex flex-col items-center relative my-8">
+        <div className=" flex flex-col items-center relative my-8 zoom">
           <img
             src={brick}
             className="max-w-full h-[3rem] rounded-full bg-lightC p-2 absolute mt-[-2rem] box-shad "
@@ -26,7 +29,10 @@ const ServiceList = () => {
         </div>
         <div className="grid grid-cols-1 sm:px-4 lg:px-8 xl:px-28 sm:grid-cols-2 md:grid-cols-2  xl:grid-cols-3 gap-4">
           {serviceData.map((service, index) => (
-            <div key={index} className="my-2 bg-lightC box-shad border-design">
+            <div
+              key={index}
+              className="my-2 bg-lightC box-shad border-design left-in "
+            >
               {service.video ? (
                 <video
                   src={service.video}

@@ -3,6 +3,7 @@ import lashB from "../Images/b3.jpg";
 
 import Footer from "../Component/Footer";
 import ContMain from "../Component/ContMain";
+import ScrollToTopButton from "../Component/ScrollToTopButton";
 const Contact = () => {
   useEffect(() => {
     // Scroll to the top on component mount
@@ -21,6 +22,7 @@ const Contact = () => {
         </div>
         <ContMain />
         <Footer />
+        <ScrollToTopButton />
       </div>
     </>
   );

@@ -2,11 +2,15 @@ import React from "react";
 import { Outlet, Link, useNavigate } from "react-router-dom";
 import "../hero.css";
 import brick from "../Images/icons/light.png";
+import useZoomInAnimation from "../animation/useZoomInAnimation";
+import useLeftToRightSwipe from "../animation/useLeftToRightSwipe";
 const WhyChooseUs = () => {
+  useLeftToRightSwipe(".left-in");
+  useZoomInAnimation(".zoom");
   return (
     <>
       <div className="p-8 sm:px-16 lg:px-24 xl:px-36 ">
-        <div className=" flex flex-col items-center relative my-8">
+        <div className=" flex flex-col items-center relative my-8 zoom">
           <img
             src={brick}
             className="max-w-full h-[3rem] rounded-full bg-lightC p-2 absolute mt-[-2rem] box-shad "
@@ -29,7 +33,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
 
-          <div className="my-4 text-lightC bg-blueC border-lightC border-design p-6  box-shad">
+          <div className="my-4 text-lightC bg-blueC border-lightC border-design p-6  box-shad left-in">
             <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px]">
               VERSATILITY
             </h3>
@@ -51,7 +55,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
 
-          <div className="my-4 text-lightC bg-blueC border-lightC border-design p-6  box-shad">
+          <div className="my-4 text-lightC bg-blueC border-lightC border-design p-6  box-shad left-in">
             <h3 className="font-bold font-tsg text-redC md:text-xl xl:text-[25px]">
               CUSTOMER SATISFACTION
             </h3>

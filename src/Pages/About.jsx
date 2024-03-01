@@ -6,6 +6,7 @@ import Whychoose from "../Component/Whychoose";
 import ContactForm from "../Component/ContactForm";
 import Footer from "../Component/Footer";
 import AboutWith from "../Component/AboutWith";
+import ScrollToTopButton from "../Component/ScrollToTopButton";
 const About = () => {
   useEffect(() => {
     // Scroll to the top on component mount
@@ -27,6 +28,7 @@ const About = () => {
         <WhyChooseUs />
         <ContactForm />
         <Footer />
+        <ScrollToTopButton />
       </div>
     </>
   );

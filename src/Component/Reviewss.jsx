@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { IoMdCall } from "react-icons/io";
 import "../hero.css";
 import brick from "../Images/icons/light.png";
+import useZoomInAnimation from "../animation/useZoomInAnimation";
+import useLeftToRightSwipe from "../animation/useLeftToRightSwipe";
 const reviews = [
   {
     id: 1,
@@ -38,6 +40,8 @@ const reviews = [
 ];
 
 const Reviewss = () => {
+  useZoomInAnimation(".zoom");
+  useLeftToRightSwipe(".left-in");
   const getInitials = (name) => {
     const names = name.split(" ");
     return names
@@ -49,7 +53,7 @@ const Reviewss = () => {
   return (
     <>
       <div className=" mx-8 mt-8 md:mx-10 lg:mx-16 xl:mx-36">
-        <div className=" flex flex-col items-center relative mt-16 mb-12">
+        <div className=" flex flex-col items-center relative mt-16 mb-12 zoom">
           <img
             src={brick}
             className="max-w-full h-[3rem] rounded-full bg-lightC p-2 absolute mt-[-2rem] box-shad "
@@ -60,7 +64,7 @@ const Reviewss = () => {
             Our Clients Trust Us
           </p>
         </div>
-        <div className="sm:grid sm:grid-cols-2 gap-4 ">
+        <div className="sm:grid sm:grid-cols-2 gap-4 left-in ">
           {reviews.map((review) => (
             <div
               key={review.id}

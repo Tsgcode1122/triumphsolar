@@ -4,6 +4,7 @@ import lashB from "../Images/b6.jpg";
 import ServiceAreass from "../Component/ServiceAreass";
 import Footer from "../Component/Footer";
 import ReMain from "../Component/ReMain";
+import ScrollToTopButton from "../Component/ScrollToTopButton";
 const Reviews = () => {
   useEffect(() => {
     // Scroll to the top on component mount
@@ -23,6 +24,7 @@ const Reviews = () => {
         <ReMain />
         <ServiceAreass />
         <Footer />
+        <ScrollToTopButton />
       </div>
     </>
   );

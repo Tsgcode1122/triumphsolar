@@ -4,6 +4,7 @@ import GalleryImg from "../Component/GalleryImg";
 import ImageGallery from "../Component/ImageGallery";
 import Footer from "../Component/Footer";
 import ContactForm from "../Component/ContactForm";
+import ScrollToTopButton from "../Component/ScrollToTopButton";
 const Gallery = () => {
   useEffect(() => {
     // Scroll to the top on component mount
@@ -25,6 +26,7 @@ const Gallery = () => {
         <GalleryImg />
         <ContactForm />
         <Footer />
+        <ScrollToTopButton />
       </div>
     </>
   );

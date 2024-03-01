@@ -2,6 +2,7 @@ import { React, useEffect } from "react";
 import lashB from "../Images/b5.jpg";
 import ServiceAreass from "../Component/ServiceAreass";
 import ContactForm from "../Component/ContactForm";
+import ScrollToTopButton from "../Component/ScrollToTopButton";
 
 const ServiceArea = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const ServiceArea = () => {
         </div>
         <ServiceAreass />
         <ContactForm />
+        <ScrollToTopButton />
       </div>
     </>
   );

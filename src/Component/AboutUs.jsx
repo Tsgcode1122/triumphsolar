@@ -4,16 +4,20 @@ import about from "../Images/brickb.png";
 import aboutu from "../Images/t2.jpg";
 import Whychoose from "./Whychoose";
 import brick from "../Images/icons/light.png";
+import useLeftToRightSwipe from "../animation/useLeftToRightSwipe";
+import useZoomInAnimation from "../animation/useZoomInAnimation";
 import "../hero.css";
 const AboutUs = () => {
+  useLeftToRightSwipe(".left-in");
+  useZoomInAnimation(".zoom");
   const bStyle = {
     backgroundImage: `url(${about})`,
   };
   return (
     <>
       <div className="m-0  p-6 bg-cover bg-center justify-center text-center sm:px-6   bg-no-repeat md:px-8 lg:px-16 xl:px-32">
-        <div className="pt-6">
-          <div className=" flex flex-col items-center relative my-8">
+        <div className="pt-6 ">
+          <div className=" flex flex-col items-center relative my-8 zoom ">
             <img
               src={brick}
               className="max-w-full h-[3rem] rounded-full bg-lightC p-2 absolute mt-[-2rem] box-shad "
@@ -44,7 +48,7 @@ const AboutUs = () => {
                 </button>
               </Link>
             </div>
-            <div className="lg:flex-1">
+            <div className="lg:flex-1 left-in">
               <img
                 src={aboutu}
                 className="max-w-full border-design border-design border-solid flex flex-wrap gap-1 box-shad"
