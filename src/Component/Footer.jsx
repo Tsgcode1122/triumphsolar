@@ -52,7 +52,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="pb-6 iix:pb-2 ixr:pb-2 ixi:pb-2  ">
+          <div className="pb-6 iix:hidden ixr:hidden ixi:hidden  ">
             <h3 className="text-redC mb-1 font-bold font-tsg text-xl">
               Service List
             </h3>
